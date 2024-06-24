@@ -1,0 +1,65 @@
+<html>
+	<div>
+		<nav style="position: relative; bottom: 50px;">
+			<a href ="index.html">Home</a>
+			<a href ="write.html">Feedback</a>
+			<a href ="display.html">Experience</a>
+		</nav>
+		<h1 style="position: relative; left: 930px; bottom: 30px;color: #F4CE14;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">ReviewsCo</h1>
+	</div>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>E-commerce Product Review System</title>
+</head>
+<style>
+    nav{
+        background-color: #379777;
+        border: 2px solid #F4CE14;
+        padding-top: 0%;
+        height: 30px;
+        padding-bottom: 30px;
+		position: relative;
+    	top:10px;
+	
+    }
+    a{
+        font-size: 20px;
+        color: #F4CE14;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding-left: 30px;
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+    }
+</style>
+<body>
+	<br><br>
+	<div class="container">
+		<br>
+		<h1>Share your rating</h1>
+		<div class="rating">
+			<span id="rating">0</span>/5
+		</div>
+		<div class="stars" id="stars">
+			<span class="star" data-value="1">◆</span>
+			<span class="star" data-value="2">◆</span>
+			<span class="star" data-value="3">◆</span>
+			<span class="star" data-value="4">◆</span>
+			<span class="star" data-value="5">◆</span>
+		</div>
+		<p>Share your review:</p>
+        <input type="text" id="name" placeholder="Name">
+        <br><br>
+        <input type="text" id="review" placeholder="Write your review here">
+		<br>
+        <br>
+		<button id="submit">Submit</button>
+		<div class="reviews" id="reviews">
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
